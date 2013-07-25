@@ -34,7 +34,9 @@ $.fn.dropAsObservable  = function(){}
 
 Additions to the Rx.Observable prototype:
 ```javascript
-// Publishes the drag Observable, listening for when it completes. On completion, checks the list of drop targets to see if the item was dropped on one of them.
+// Publishes the drag Observable, listening for when it completes.
+// On completion, checks the list of drop targets to see if the
+// item was dropped on one of them.
 rx.registerDrag  = function(target, type, data){}
 // Removes the drag target, dragging him around with the drag proxy.
 rx.dragTarget    = function(target, classnames){}
