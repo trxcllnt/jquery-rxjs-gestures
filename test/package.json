@@ -1,0 +1,34 @@
+{
+	"name": "",
+	"description": "",
+	"version": "1.0.0",
+	"author": "Paul Taylor <paul.e.taylor@me.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/guyinthechair/browserify-template.git"
+	},
+	"dependencies": {
+		"cssify2": "~0.0.3",
+		"jquery-browserify": "*",
+		"underscore": "*",
+		"ix": "*",
+		"rx": "*"
+	},
+	"devDependencies": {
+		"browserify": "*",
+		"express": "*",
+		"optimist": "*",
+		"rx-node-utils": "0.0.2",
+		"hamlify": ">0.0.3",
+		"sassify2": "~0.0.2",
+		"uglify-js": "~2.2.0"
+	},
+	"engine": {
+		"node": "0.10.x"
+	},
+	"app_modules": {
+		"jquery": "jquery-browserify",
+		"rx-jquery": "./node_modules/rx/src/bridges/jquery/rx.jquery.js",
+		"jquery-plugins": "./lib/index.js"
+	}
+}
