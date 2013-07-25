@@ -4,22 +4,18 @@ try {
                        .default({
                            'env': 'dev',
                            'src': 'src/',
-                           'lib': 'lib/',
+                           'lib': 'test/',
                            'out': 'bundle.js'
                        })
                        .argv;
 	var browserify = require('browserify');
-	var express    = require('express');
-	var hamlify    = require('hamlify');
-	var sassify    = require('sassify2');
-	var uglify     = require('uglify-js');
 	
 	var compile    = require('./compile');
 	var rxfs       = require('./node_modules/rx-node-utils/lib/rx-fs');
 	
 	var Rx         = require('rx');
 	var Ix         = require('ix');
-	var            = require('underscore');
+	var _          = require('underscore');
 	
 } catch(error) {
 	console.error(error, 'Please run `npm install` first');

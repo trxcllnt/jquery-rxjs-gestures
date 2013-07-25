@@ -1,9 +1,7 @@
 // Make sure we have all the dependencies.
 try {
 	var browserify = require('browserify');
-	var hamlify    = require('hamlify');
-	var sassify    = require('sassify2');
-	var uglify     = require('uglify-js');
+	var cssify2    = require('cssify2');
 	
 	var rxfs       = require('./node_modules/rx-node-utils/lib/rx-fs');
 	
@@ -64,8 +62,7 @@ function nuke_lib(dest) {
 function get_packager(pckg, src) {
 	
 	var packager = browserify()
-		.transform(hamlify)
-		.transform(sassify)
+		.transform(cssify2)
 		.add(src);
 	
 	return rxfs

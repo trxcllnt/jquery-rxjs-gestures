@@ -5,7 +5,7 @@ try {
                     .default({
                         'env': 'dev',
                         'src': 'src/',
-                        'lib': 'lib/',
+                        'lib': 'test/',
                         'out': 'bundle.js'
                     })
                     .argv;

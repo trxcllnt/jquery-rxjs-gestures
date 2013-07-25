@@ -8,16 +8,29 @@
 		"url": "https://github.com/guyinthechair/rx-js-gestures.git"
 	},
 	"scripts": {
-		"test": "node test/test.js"
+		"test": "node build.js"
 	},
 	"main": "./index.js",
 	"dependencies": {
 		"jquery-browserify": "*",
 		"rx": "*",
-		"underscore": "*"
+		"ix": "*",
+		"underscore": "*",
+		"cssify2": "~0.0.4"
+	},
+	"devDependencies": {
+		"browserify": "*",
+		"express": "*",
+		"optimist": "*",
+		"rx-node-utils": "0.0.2"
 	},
 	"bundleDependencies": [],
 	"engine": {
 		"node": "0.10.x"
+	},
+	"app_modules": {
+		"jquery": "jquery-browserify",
+		"rx-jquery": "./node_modules/rx/src/bridges/jquery/rx.jquery.js",
+		"jquery-plugins": "./lib/index.js"
 	}
 }

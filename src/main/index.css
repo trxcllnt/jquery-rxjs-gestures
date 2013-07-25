@@ -1,0 +1,11 @@
+body div {
+	float: left;
+}
+
+.press {
+	opacity: 0.8;
+}
+
+.long-press {
+	opacity: 0.6;
+}
