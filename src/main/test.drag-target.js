@@ -3,18 +3,20 @@ module.exports = function() {
 	var ui = $('<div></div>').css({
 		width: 150 + 'px',
 		height: 150 + 'px',
-		'background': 'blue'
+		'background': 'lightgreen'
 	})
-	.text('Move')
+	.text('Drag target')
 	
-	var move = ui.moveAsObservable();
+	var drag = ui.dragAsObservable()
+		.doDragActions(ui, true)
+		.repeat();
 	
-	move.subscribe(function(event) {
+	drag.subscribe(function(event) {
 		
 		var local = event.local;
 		var global = event.global;
 		
-		var str = 'Move at <br>';
+		var str = 'Drag target at <br>';
 		str += 'local: (' + local.x + ', ' + local.y + ')<br>';
 		str += 'global: (' + global.x + ', ' + global.y + ')';
 		

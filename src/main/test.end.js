@@ -2,7 +2,7 @@ module.exports = function() {
 	
 	var ui = $('<div></div>').css({
 		width: 150 + 'px',
-		height: 75 + 'px',
+		height: 150 + 'px',
 		'background': 'yellow'
 	})
 	.text('End')

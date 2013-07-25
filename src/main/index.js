@@ -9,6 +9,7 @@ var long_press = require('./test.long-press');
 var tap = require('./test.tap');
 var drag = require('./test.drag');
 var long_drag = require('./test.long-drag');
+var drag_target = require('./test.drag-target');
 
 module.exports = function() {
 	var ui = $('body');
@@ -21,7 +22,8 @@ module.exports = function() {
 		long_press(),
 		tap(),
 		drag(),
-		long_drag()
+		long_drag(),
+		drag_target()
 	);
 	
 	return ui;
