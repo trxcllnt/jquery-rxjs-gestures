@@ -1,3 +1,9 @@
+body {
+	margin: 0;
+	padding: 0;
+	perspective: 800px;
+}
+
 body div {
 	float: left;
 }
@@ -8,4 +14,16 @@ body div {
 
 .long-press {
 	opacity: 0.6;
+}
+
+.drag-proxy {
+	
+	position: absolute;
+	z-index: 2147483638; /*int.MAX_VALUE for 32-bit operations*/
+	
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 }
