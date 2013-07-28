@@ -38,8 +38,7 @@ Additions to the Rx.Observable prototype:
 // On completion, checks the list of drop targets to see if the
 // item was dropped on one of them.
 rx.registerDrag  = function(target, type, data){}
-// Removes the drag target, dragging him around with the drag proxy.
-rx.dragTarget    = function(target, classnames){}
-// Creates a clone of the target, leaving the target in place.
-rx.dragClone     = function(target, classnames){}
+// Moves the target following the dispatched drag events.
+rx.doDragActions = function(target, classnames){}
+
 ```
