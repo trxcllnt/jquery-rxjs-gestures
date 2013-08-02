@@ -7,7 +7,7 @@ module.exports = function() {
 	})
 	.text('Long Press (>= 500ms)')
 	
-	var press = ui.pressAsObservable(500);
+	var press = ui.pressAsObservable(500).repeat();
 	
 	press.subscribe(function(event) {
 		

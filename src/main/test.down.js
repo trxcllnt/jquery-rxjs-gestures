@@ -7,7 +7,7 @@ module.exports = function() {
 	})
 	.text('Down')
 	
-	var down = ui.downAsObservable();
+	var down = ui.downAsObservable().repeat();
 	
 	down.subscribe(function(event) {
 		var local = event.local;

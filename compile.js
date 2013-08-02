@@ -7,7 +7,7 @@ try {
 	
 	var Rx         = require('rx');
 	var Ix         = require('ix');
-	var _          = require('underscore');
+	var _          = require('lodash');
 } catch(error) {
 	console.error(error, 'Please run `npm install` first');
 	process.exit(1);

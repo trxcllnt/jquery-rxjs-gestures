@@ -7,7 +7,7 @@ module.exports = function() {
 	})
 	.text('Drag')
 	
-	var move = ui.dragAsObservable();
+	var move = ui.dragAsObservable().repeat();
 	
 	move.subscribe(function(event) {
 		
