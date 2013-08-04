@@ -1,6 +1,6 @@
 {
 	"name": "rxjs-gestures",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"author": "Paul Taylor <paul.e.taylor@me.com>",
 	"description": "Unified mouse + touch gestures written in RxJS.",
 	"repository": {
